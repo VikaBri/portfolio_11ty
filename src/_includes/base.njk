@@ -1,14 +1,13 @@
 ---
 siteName: YourSiteName
 ---
-<!DOCTYPE html>
+<!doctype html>
+
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <title>{{siteName}} | {{ title }}</title>
-
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="utf-8">
+  <title></title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
 
   <meta name="description" content="">
   <meta name="author" content="">
@@ -19,16 +18,44 @@ siteName: YourSiteName
   <meta property="og:description" content="">
   <meta property="og:image" content="">
 
-  <link rel="stylesheet" href="/css/normalize.css">
-  <link rel="stylesheet" href="/css/style.css">
+  <link rel="stylesheet" href="css/normalize.css">
+  <link rel="stylesheet" href="css/styles.css">
 </head>
-<body>
-  <header class="site-header">
-        <!-- add site wide header content here -->
-        {% include "nav-basic.njk" %}
-  </header>
 
-  {{ content | safe }}
+<body>
+  <nav class="navbar">
+    <!-- LOGO -->
+    <header class="header">
+    
+        <div class="animate-charcter">
+          Viktoriia Bryzhatova
+        </div>
+      </div>
+    </header>
+
+    
+    <!-- NAVIGATION MENU -->
+    <ul class="nav-links">
+      <!-- USING CHECKBOX HACK -->
+      
+      <label for="checkbox_toggle" class="hamburger">&#9776;</label>
+      <!-- NAVIGATION MENUS -->
+      <div class="menu">
+        <li class="services">
+          <a href="/">Portfolio</a>
+          <!-- DROPDOWN MENU -->
+          <ul class="dropdown">
+            <li><a href="/">Logos </a></li>
+            <li><a href="/">Illustrations</a></li>
+            <li><a href="/">Animations</a></li>
+            <li><a href="/">Photography</a></li>
+          </ul>
+       
+        <li><a href="/">Contact</a></li>  
+      </div>
+    
+  </nav>
+</body>
 
   <footer class="site-footer">
     <div>

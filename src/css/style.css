@@ -10,17 +10,19 @@
 @import url('https://fonts.googleapis.com/css?family=Rubik:400,400i,700,700i');
 @import url('https://fonts.googleapis.com/css?family=Barlow+Condensed:400,500');
 */
-
+@import url('https://fonts.googleapis.com/css2?family=Cabin&family=League+Script&family=Sacramento&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Cabin&display=swap');
 /* The html and body selectors below set the base type for the entire page */
 html {
-  font-size: 1em;
+    font-size: 1em;
 }
 
 body {
-  font-family: sans-serif;
-  font-weight: 400;
-  line-height: 1.5;
-  color: #333;
+    font-family: sans-serif;
+    font-weight: 400;
+    line-height: 1.5;
+    color: #333;
+    background-color: rgb(0, 0, 0);
 }
 
 
@@ -30,21 +32,38 @@ body {
 /* mess up your navigation styling */
 p,
 li {
-  margin-top: 0;
-  margin-bottom: 1em;
+    margin-top: 0;
+    margin-bottom: 1em;
 }
 
 
 /* Base Styling for headings.
-  You can and should modify these to fit your site*/
+    You can and should modify these to fit your site*/
 h1,
 h2,
 h3,
 h4,
 h5,
 h6 {
-  font-weight: 500;
-  font-family: serif;
+    font-weight: 500;
+    font-family: serif;
+    color: rgb(255, 255, 255);
+		text-align: center;
+    font-family:'Cabin', sans-serif;
+}
+
+p1{
+    color: rgb(255, 255, 255);
+	font-size: 17px;
+	text-align: center;
+    font-family:'Cabin', sans-serif;
+}
+
+p2{
+    color: rgb(255, 255, 255);
+	font-size: 15px;
+	text-align: center;
+    font-family:'Cabin', sans-serif;
 }
 
 
@@ -52,94 +71,484 @@ h6 {
 Adjust font-weight and other properties as needed. */
 
 h1 {
-  font-size: 5.063em;
-  line-height: 1;
-  margin: 0 0 0.5em 0;
+    font-size: 5.063em;
+    line-height: 1;
+    margin: 0 0 0.5em 0;
 }
 
 h2 {
-  font-size: 3.375em;
-  line-height: 1.2;
-  margin: 1.5em 0 0.5em 0;
+    font-size: 3.375em;
+    line-height: 1.2;
+    margin: 1.5em 0 0.5em 0;
 }
 
 h3 {
-  font-size: 2.25em;
-  line-height: 1;
-  margin: 1.5em 0 0.25em 0;
+    color: rgb(255, 255, 255);
+	font-size: 20px;
+	text-align: center;
+    font-family:'Cabin', sans-serif;
+
 }
 
 h4 {
-  font-size: 1.5em;
-  line-height: 1;
-  margin: 1.5em 0 0.5em 0;
-  font-weight: 400;
+    color: rgb(255, 255, 255);
+	font-size: 18px;
+	text-align: center;
+    font-family:'Cabin', sans-serif;
+    line-height: 1;
+    margin: 1.5em 0 1.5em 1.5em;
+    
 }
 
 h5 {
-  font-size: 1em;
-  line-height: 1;
-  margin: 1.5em 0 0.5em 0;
-  font-weight: 400;
-}
+    color: rgb(255, 255, 255);
+	font-size: 20px;
+	text-align: center;
+    }
 
 h6 {
-  font-size: 1em;
-  line-height: 1.5;
-  margin: 1em 0 0 0;
-  font-weight: 400;
-  /* normal */
-  text-transform: uppercase;
+    color: rgb(255, 255, 255);
+	font-size: 20px;
+	text-align: center;
+    font-family:'Cabin', sans-serif;
+    font-size: 1em;
+    line-height: 1.5;
+    margin: 1em 0 0 0;
+    font-weight: 400;
+    /* normal */
+    text-transform: uppercase;
 }
 
-/* ======================================================
-   Responsive Styling and Layout
-   =======================================================  */
+h7 {
+    color: rgb(255, 255, 255);
+	font-size: 20px;
+	text-align: center;
+    text-transform: capitalize;
+    }
 
-/* ========== Use Border Box model ============ */
+
+
+/*  ==========================
+    BASE RESPONSIVE
+    ========================== */
+
+/* Use border-box box-sizing. This isn't strictly necessary with CSS Grid but can be helpful if you're using a float fallback and it tends to be more intuitive.*/
+
 html {
     box-sizing: border-box;
-  }
-  *, *:before, *:after {
+}
+
+*,
+*:before,
+*:after {
     box-sizing: inherit;
-  }
-  
-  /* ======== Basic Responsive Images and Video ========= */
-  img,video{
+}
+
+
+/* This is basic way to make images responsive. This means if they're larger than their container they will shrink to fit it. Not a complete solution to responsive images. */
+
+img, video {
     width: auto;
     height: auto;
     max-width: 100%;
-  }
-  
-  /* ======== Responsive Embedded Video ================= */
-  /* to use this add a div with class videoWrapper around the iframe markup copied from YouTube or Vimeo. Then also add a ratio-16-9 (most common) or ratio-4-3 class to the wrapper depending on the aspect ratio of your video */
-  /* More info here: https://codepen.io/profstein/pen/mArLRj */
-  .videoWrapper {
-      position: relative;
-      padding-top: 25px;
-      height: 0;
-    clear:both;
-    outline:1px solid red;
-  }
-  
-  .videoWrapper.ratio-16-9{
-      padding-bottom: 56.25%; /* 16:9 */
-  }
-  
-  .videoWrapper.ratio-4-3{
-      padding-bottom: 75%; /* 4:3 */
-  }
-  
-  .videoWrapper iframe {
-      position: absolute;
-      top: 0;
-      left: 0;
-      width: 100%;
-      height: 100%;
-  }
-  
-  /* ================= ===========================
-  ADD YOUR CSS HERE 
-  ================================================ */
-  /* Add your CSS for the site here */
+}
 
+/*RESPONSIVE VIDEO
+See for more info: https://codepen.io/profstein/pen/mrMLRj
+*/
+.videoWrapper{
+    position: relative;
+    height: 0;
+    /* padding-bottom: 75%; */ /* 4:3 aspect ratio */
+    padding-bottom: 56.25%; /* 16:9 aspect ratio */
+}
+
+.videoWrapper iframe{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width:100%;
+    height: 100%;
+}
+
+
+/*  ==========================
+    YOUR STYLES
+    Add your styles below.
+    ========================== */
+
+       
+   
+
+ * {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+ }
+ body {
+  font-family: 'Cabin', sans-serif;
+ }
+ a {
+  text-decoration: none;
+ }
+ li {
+  list-style: none;
+ }
+ /* NAVBAR STYLING */
+ .navbar {
+    border: 2px solid black;
+    width: 100%;
+    position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 5px;
+  background-color: #000;
+  color: #fff;
+ }
+ .nav-links a {
+  color: #fff;
+ }
+ /* LOGO */
+
+ .animate-charcter
+ {
+    margin-left: 5px;
+   font-family: 'Sacramento', cursive;
+   background-image: linear-gradient(
+     -225deg,
+     #3809df 0%,
+     #4b67d3 29%,
+     #4b67d3 67%,
+     #fff800 100%
+   );
+   
+  
+   background-size: 200% auto; 
+   color: #fff;
+   background-clip: text;
+   /*text-fill-color: transparent;*/
+   -webkit-background-clip: text;
+   -webkit-text-fill-color: transparent;
+   animation: textclip 2s linear infinite;
+   /*display: inline-block;*/
+       font-size: 34px;
+       text-align: center;
+           
+ }
+
+ @keyframes textclip {
+   to {
+     background-position: 200% center;
+     
+   }
+ }
+
+ /* NAVBAR MENU */
+ .menu {
+  display: flex;
+  gap: 1e;
+  font-size: 18px;
+ }
+ .menu li:hover {
+  background-color: #5b7ba1;
+  border-radius: 5px;
+  transition: 0.3s ease;
+ }
+ .menu li {
+  padding: 5px 14px;
+ }
+ /* DROPDOWN MENU */
+ .services {
+  position: relative; 
+ }
+ .dropdown {
+  background-color: #1c39567f;
+  padding: 1em 0; 
+  position: absolute; 
+  display: none;
+  border-radius: 8px;
+  top: 38px;
+ }
+ .dropdown li + li {
+  margin-top: 10px;
+ }
+ .dropdown li {
+  padding: 0.5em 1em; 
+  width: 8em;
+  text-align: center;
+ }
+ .dropdown li:hover {
+  background-color: #3809df;
+ }
+ .services:hover .dropdown {
+  display: block;
+ }
+
+ .footer-content{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+}
+
+/* Centered text */
+.centered {
+    position: absolute;
+    text-align:center;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 20px;
+    color: rgb(255, 255, 255);
+    background-color: #1c39567f;
+    
+  }
+ 
+    
+/*sections projects*/
+
+  .project{
+  color: #fff;
+  padding: 50px;
+  margin: 1rem;
+  text-align: center;
+	display: inline-block;
+	box-sizing: border-box;
+	cursor: pointer;
+	margin: 10px;
+	background-color: #1c3956;
+	background-position: center;
+	transition: transform 0.5s;
+    
+  }
+  .project:hover{
+	transform: translateY(-15px);
+    background-color: #3709df85;	 
+}
+
+  .page-projects{
+    color: #fff;
+    display: grid;
+    grid-template-columns: 1fr;
+    text-align:center;    
+    font-size: 20px;
+    
+  }
+  
+  @media screen and (min-width: 600px){
+    .page-projects{
+      grid-template-columns: repeat(2, 1fr);
+    }
+  }
+  
+  @media screen and (min-width: 1200px){
+    .page-projects{
+      grid-template-columns: repeat(4, 1fr);
+    }
+  }
+
+  .pagename{
+    position: absolute;
+    text-align:center;
+    top: 4%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 20px;
+    color: rgb(255, 255, 255);
+  }
+
+  /*ILLUSTRATION PAGE*/
+  
+
+
+  /* Float images in the intros */
+.intro img{
+        border: 1px solid rgba(1, 1, 1, 0.283);
+        border-radius: 4px;
+        padding: 5px;
+        width: 600px;
+
+    float: left; 
+    margin: 0 1rem 1rem 0;
+    
+  }
+  
+  .box{
+    
+    clear: both;
+    overflow: auto;
+  }
+  
+  /* GRID LAYOUT */
+  .boxes{
+    display: grid;
+    position: absolute;
+    text-align:center;
+    top: 15%;
+    /*left: 50%;
+    transform: translate(-50%, -50%);*/
+    font-size: 20px;
+    grid-template-columns: 1fr;
+  /*   special responsive columns (from una kravets 1 line layouts) */
+  grid-template-rows: fit-content(40%);
+    grid-gap: 1rem;
+  }
+  
+
+ 
+  /*@media (min-width: 768px){
+    body{
+      grid-template-columns: 1fr 175px;
+      grid-gap: 1rem;
+    }
+   
+  /* end (min-width: 768px) */
+  
+  /* flexbox styling */
+  .box{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    
+  /*   justify-content: center;
+    align-items: center; */
+  }
+  
+  
+  
+  /* =====================================================
+     GENERAL STYLING
+     makes boxes orange and changes default font
+     not necessary for teh layout, just makes it look nicer
+     ===================================================== */
+  
+  /* General Typography */
+  body{
+    font-family: sans-serif;
+   }
+  h1{
+    font-size: 3rem;
+  }
+  p{
+    font-size:1.5rem;
+  }
+  
+  /*basic color to see box */
+  .box{
+    /*background-color: #5b7aa171;*/
+    padding: 30px;
+  }
+
+  .intro{
+    padding: 30px;
+    background-color: rgba(11, 4, 30, 0.352);
+    /*margin: 1rem;*/
+  }
+  .features{
+    display: grid;
+    grid-template-columns: 1fr;
+  }
+  
+  @media screen and (min-width: 600px){
+    .features{
+      grid-template-columns: repeat(2, 1fr);
+    }
+  }
+  
+  @media screen and (min-width: 1200px){
+    .features{
+      grid-template-columns: repeat(3, 1fr);
+    }
+  }
+  
+  /* LOGOS */
+
+  
+  /* Float images in the intros */
+.logobox img{
+    border: 1px solid rgba(1, 1, 1, 0.283);
+    border-radius: 4px;
+    padding: 5px;
+    width: 400px;
+background-color: #0e20337f;
+float: left; 
+margin: 0 1rem 1rem 0;
+
+}
+
+.box{
+
+clear: both;
+overflow: auto;
+}
+
+/* GRID LAYOUT */
+.logos{
+display: grid;
+position: absolute;
+text-align:center;
+top: 15%;
+/*left: 50%;
+transform: translate(-50%, -50%);*/
+font-size: 20px;
+grid-template-columns: 1fr;
+/*   special responsive columns (from una kravets 1 line layouts) */
+grid-template-rows: fit-content(40%);
+grid-gap: 1rem;
+}
+
+
+
+/*@media (min-width: 768px){
+body{
+  grid-template-columns: 1fr 175px;
+  grid-gap: 1rem;
+}
+/* end (min-width: 768px) */
+
+/* flexbox styling */
+.log{
+display: flex;
+flex-direction: column;
+justify-content: space-between;
+
+/*   justify-content: center;
+align-items: center; */
+}
+
+
+
+/* =====================================================
+ GENERAL STYLING
+ makes boxes orange and changes default font
+ not necessary for teh layout, just makes it look nicer
+ ===================================================== */
+
+/* General Typography */
+body{
+font-family: sans-serif;
+}
+h1{
+font-size: 3rem;
+}
+p{
+font-size:1.5rem;
+}
+
+/*basic color to see box */
+.log{
+/*background-color: #5b7aa171;*/
+padding: 70px;
+}
+
+.logobox{
+padding: 50px;
+background-color: rgba(11, 4, 30, 0.352);
+/*margin: 1rem;*/
+}
+.features{
+display: grid;
+grid-template-columns: 1fr;
+}
