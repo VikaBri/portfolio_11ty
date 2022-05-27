@@ -369,3 +369,8 @@ grid-template-columns: 1fr;
   grid-template-columns: repeat(4, 1fr);
 }
 }     */
+
+.site-footer{
+  align-items: center;
+  text-align: center;
+}

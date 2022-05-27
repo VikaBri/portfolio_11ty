@@ -438,13 +438,21 @@ See for more info: https://codepen.io/profstein/pen/mrMLRj
   /*basic color to see box */
   .box{
     /*background-color: #5b7aa171;*/
-    padding: 30px;
+    padding: 20px;
   }
 
   .intro{
     padding: 30px;
     background-color: rgba(11, 4, 30, 0.352);
     /*margin: 1rem;*/
+  }
+  .intro img{
+    width: 500px;
+  }
+  .p2{
+    align-content: center;
+    align-self: center;
+
   }
   .features{
     display: grid;
