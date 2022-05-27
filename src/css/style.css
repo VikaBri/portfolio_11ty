@@ -246,6 +246,8 @@ See for more info: https://codepen.io/profstein/pen/mrMLRj
 
  /* NAVBAR MENU */
  .menu {
+   padding-top: 20px;
+   align-items: center;
   display: flex;
   gap: 1e;
   font-size: 18px;
