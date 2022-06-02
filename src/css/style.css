@@ -352,11 +352,11 @@ See for more info: https://codepen.io/profstein/pen/mrMLRj
   }
 
   .pagename{
-    position: absolute;
+    /* position: absolute;
     text-align:center;
     top: 4%;
     left: 50%;
-    transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%); */
     font-size: 20px;
     color: rgb(255, 255, 255);
   }
@@ -377,7 +377,8 @@ See for more info: https://codepen.io/profstein/pen/mrMLRj
     
   }
   
-  .box{
+  /* need to clear elements after the floats */
+  .box, .site-footer{
     
     clear: both;
     overflow: auto;
@@ -386,9 +387,9 @@ See for more info: https://codepen.io/profstein/pen/mrMLRj
   /* GRID LAYOUT */
   .boxes{
     display: grid;
-    position: absolute;
+    /* position: absolute; */ /*grid should not be positioned absolutely*/
     text-align:center;
-    top: 15%;
+    /* top: 15%; */
     /*left: 50%;
     transform: translate(-50%, -50%);*/
     font-size: 20px;
@@ -400,13 +401,13 @@ See for more info: https://codepen.io/profstein/pen/mrMLRj
   
 
  
-  /*@media (min-width: 768px){
-    body{
-      grid-template-columns: 1fr 175px;
+  @media (min-width: 768px){
+    .boxes{
+      grid-template-columns: 1fr 1fr;
       grid-gap: 1rem;
     }
-   
-  /* end (min-width: 768px) */
+  }
+  /* end (min-width: 768px)
   
   /* flexbox styling */
   .box{
@@ -497,9 +498,9 @@ overflow: auto;
 /* GRID LAYOUT */
 .logos{
 display: grid;
-position: absolute;
+/* position: absolute; */
 text-align:center;
-top: 15%;
+/* top: 15%; */
 /*left: 50%;
 transform: translate(-50%, -50%);*/
 font-size: 20px;
@@ -511,12 +512,12 @@ grid-gap: 1rem;
 
 
 
-/*@media (min-width: 768px){
-body{
-  grid-template-columns: 1fr 175px;
+@media (min-width: 768px){
+.logos{
+  grid-template-columns: 1fr 1fr;
   grid-gap: 1rem;
 }
-/* end (min-width: 768px) */
+/* end (min-width: 768px)
 
 /* flexbox styling */
 .log{
@@ -561,4 +562,16 @@ background-color: rgba(11, 4, 30, 0.352);
 .features{
 display: grid;
 grid-template-columns: 1fr;
+}
+
+
+
+
+
+
+/* Prof Stein Additions */
+
+
+.portfolio-page {
+  background-image: url("/images/bkgrsky.png");
 }

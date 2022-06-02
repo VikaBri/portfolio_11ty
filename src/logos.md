@@ -3,10 +3,9 @@ title: Logos
 layout: base.njk
 tags: navItem
 ---
-<main>
-    <background-image><img src="/images/bkgrsky.png"</background-image>       
+<main>    
     <h6 class="pagename">LOGOS</h6> 
-      <main class="logos"> 
+      <main class="portfolio-page logos"> 
         </section>
         <section class="log 1">
           <div class="logobox">
