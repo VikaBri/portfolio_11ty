@@ -6,8 +6,7 @@ tags: navItem
 <main>
   <background-image><img src="/images/bkgrsky.png"</background-image>       
   <h6 class="pagename">ILLUSTRATIONS</h6> 
-  <main class="boxes">   
-    </section>
+  <main class="logos">   
     <section class="box box1">
       <div class="intro">
         <img src="/images/2WildwoodMAp.jpg" alt="wildwood">

@@ -366,6 +366,7 @@ See for more info: https://codepen.io/profstein/pen/mrMLRj
 
 
   /* Float images in the intros */
+
 .intro img{
         border: 1px solid rgba(1, 1, 1, 0.283);
         border-radius: 4px;
@@ -374,7 +375,7 @@ See for more info: https://codepen.io/profstein/pen/mrMLRj
 
     float: left; 
     margin: 0 1rem 1rem 0;
-    
+    width: 500px;
   }
   
   .box{
@@ -384,7 +385,21 @@ See for more info: https://codepen.io/profstein/pen/mrMLRj
   }
   
   /* GRID LAYOUT */
-  .boxes{
+
+.illustrations{
+  display: grid;
+    position: absolute;
+    text-align:center;
+    top: 15%;
+   
+    font-size: 20px;
+   
+  special responsive columns (from una kravets 1 line layouts);
+ grid-template-rows: fit-content(40%); 
+    grid-gap: 1rem;
+}
+
+ .boxes{
     display: grid;
     position: absolute;
     text-align:center;
@@ -392,13 +407,12 @@ See for more info: https://codepen.io/profstein/pen/mrMLRj
     /*left: 50%;
     transform: translate(-50%, -50%);*/
     font-size: 20px;
-    grid-template-columns: 1fr;
+   grid-template-columns: 1fr;
   /*   special responsive columns (from una kravets 1 line layouts) */
-  grid-template-rows: fit-content(40%);
+ /* grid-template-rows: fit-content(40%);  */
     grid-gap: 1rem;
-  }
-  
-
+  } 
+ 
  
   /*@media (min-width: 768px){
     body{
@@ -448,9 +462,7 @@ See for more info: https://codepen.io/profstein/pen/mrMLRj
     background-color: rgba(11, 4, 30, 0.352);
     /*margin: 1rem;*/
   }
-  .intro img{
-    width: 500px;
-  }
+ 
   .p2{
     align-content: center;
     align-self: center;
@@ -469,8 +481,11 @@ See for more info: https://codepen.io/profstein/pen/mrMLRj
   
   @media screen and (min-width: 1200px){
     .features{
-      grid-template-columns: repeat(3, 1fr);
-    }
+      grid-template-columns: repeat(1fr, 1fr);
+          }
+          .illustrations{
+            grid-template-columns: repeat(1fr, 1fr);
+          }
   }
   
   /* LOGOS */
@@ -488,18 +503,17 @@ margin: 0 1rem 1rem 0;
 
 }
 
-.box{
-
+/*.box{
 clear: both;
 overflow: auto;
-}
+} */
 
 /* GRID LAYOUT */
 .logos{
 display: grid;
 position: absolute;
 text-align:center;
-top: 15%;
+top: 5%;
 /*left: 50%;
 transform: translate(-50%, -50%);*/
 font-size: 20px;
@@ -550,15 +564,44 @@ font-size:1.5rem;
 /*basic color to see box */
 .log{
 /*background-color: #5b7aa171;*/
-padding: 70px;
+/*padding: 70px;*/
 }
 
 .logobox{
-padding: 50px;
+padding: 25px;
 background-color: rgba(11, 4, 30, 0.352);
 /*margin: 1rem;*/
 }
 .features{
 display: grid;
 grid-template-columns: 1fr;
+}
+
+.videoWrapper {
+  align-items: center;
+	position: relative;
+	padding-top: 25px;
+	height: 0;
+  clear:both;
+  outline:1px solid red;
+}
+
+.videoWrapper.ratio-16-9{
+    padding-bottom: 56.25%; /* 16:9 */
+    margin-top: 25px;
+    width:200 px;
+}
+
+.videoWrapper.ratio-4-3{
+    padding-bottom: 75%; /* 4:3 */
+}
+
+.videoWrapper iframe {
+	position: absolute;
+	top: 0 px;
+	left: 0;
+	/*width: 100%;
+	height: 100%;*/
+  width: 400 px;
+  
 }
