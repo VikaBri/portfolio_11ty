@@ -7,9 +7,9 @@ tags: navItem
 <main>
     <background-image><img src="/images/bkgrsky.png"</background-image>       
     <h6 class="pagename">ANIMATIONS</h6> 
-      <main class="logos"> 
-        <section class="log 1">
-          <div class="logobox">
+      <main class="animations"> 
+        <section class="ani 1">
+          <div class="animationbox">
 <h3>“BEHIND THE DOOR”</h3>
 <div class="videoWrapper ratio-16-9">
 	<!-- iframe below is Copy & Pasted from YouTube replace with your own -->
@@ -20,8 +20,8 @@ tags: navItem
 <p1>Animation inspired by the American TV show featured on Netflix “Locke & Key”, and Halloween.</p1>
             </div>
               </section>
-    <section class="log 1">
-          <div class="logobox">
+    <section class="ani 2">
+          <div class="animationbox">
 <h3>“SMILE”</h3>
 <div class="videoWrapper ratio-16-9">
 	<!-- iframe below is Copy & Pasted from YouTube replace with your own -->
@@ -32,8 +32,8 @@ tags: navItem
 <p1>Animated words project - wherein the letters follow the arc of an actual "smile". Zooming and shading effects were used as well.</p1>
             </div>
               </section>
- <section class="log 1">
-        <div class="logobox">
+ <section class="ani 3">
+        <div class="animationbox">
 <h3>“LIPSTIC”</h3>
 <img src="/images/LogoGIF.gif">
             <h4>Adobe After Effects</h4>
