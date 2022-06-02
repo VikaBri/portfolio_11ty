@@ -5,10 +5,12 @@ tags: navItem
 ---
 # {{title}}
 <main>
-      <img src="/images/backgroundmain1.png">     
-        <p class="centered">
-          Hello! I am a graphic designer based in New York City. I was raised and born in Ukraine and moved to the US in 2014. I am currently a student at Borough of Manhattan Community College, where I study Multimedia Programming and Design. My goal is to gain new skills and experiences to create engaging integrated concepts and innovative designs.
-        </p>
+      <div class="home-intro">
+        <img src="/images/backgroundmain1.png">
+          <p class="centered">
+            Hello! I am a graphic designer based in New York City. I was raised and born in Ukraine and moved to the US in 2014. I am currently a student at Borough of Manhattan Community College, where I study Multimedia Programming and Design. My goal is to gain new skills and experiences to create engaging integrated concepts and innovative designs.
+          </p>
+      </div>
     <section class="page-projects">
       <div class="project one"><a href="/illustrations"><h7> ILLUSTRATIONS</h7></a>
       </div>
