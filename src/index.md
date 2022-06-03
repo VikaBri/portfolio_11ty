@@ -3,7 +3,6 @@
 layout: base.njk
 tags: navItem
 ---
-# {{title}}
 <main>
        <div class="home-intro">
         <img src="/images/backgroundmain1.png">

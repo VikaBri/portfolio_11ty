@@ -3,8 +3,7 @@ title: Illustrations
 layout: base.njk
 tags: navItem
 ---
-<main>
-  <background-image><img src="/images/bkgrsky.png"</background-image>       
+<main class="postfolio-page">          
   <h6 class="pagename">ILLUSTRATIONS</h6> 
   <main class="logos">   
     <section class="box box1">

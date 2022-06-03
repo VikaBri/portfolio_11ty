@@ -349,7 +349,7 @@ template {
 } 
 /**started editing here?**/
 
-.intro, .action1, .action2, .page-projects, .announcement{
+.action1, .action2, .page-projects, .announcement{
 padding: 50px;
 background-color: #ccc;
 margin: 1rem;
@@ -370,7 +370,4 @@ grid-template-columns: 1fr;
 }
 }     */
 
-.site-footer{
-  align-items: center;
-  text-align: center;
-}
+

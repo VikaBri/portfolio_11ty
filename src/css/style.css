@@ -25,6 +25,18 @@ body {
     background-color: rgb(0, 0, 0);
 }
 
+.postfolio-page{
+    background-image: url("/images/bkgrsky.png");
+}
+
+.site-footer{
+    background-color: #000;
+    text-align: center;
+    margin-top: 20px;
+    font-size: 5px;
+
+}
+
 
 /* This adds space between paragraphs and list items*/
 /* NOTE: most Navigations use list items so you will need to */
@@ -372,14 +384,12 @@ See for more info: https://codepen.io/profstein/pen/mrMLRj
         border-radius: 4px;
         padding: 5px;
         width: 600px;
-
     float: left; 
     margin: 0 1rem 1rem 0;
     width: 500px;
   }
   
-  .box{
-    
+  .box, .site-footer{
     clear: both;
     overflow: auto;
   }
@@ -388,7 +398,7 @@ See for more info: https://codepen.io/profstein/pen/mrMLRj
 
 .illustrations{
   display: grid;
-    position: absolute;
+    /*position: absolute;*/
     text-align:center;
     top: 15%;
     font-size: 20px;
@@ -399,11 +409,11 @@ See for more info: https://codepen.io/profstein/pen/mrMLRj
 
  .boxes{
     display: grid;
-    position: absolute;
+    /*position: absolute;*/
     text-align:center;
     top: 15%;
-    /*left: 50%;
-    transform: translate(-50%, -50%);*/
+    left: 50%;
+    transform: translate(-50%, -50%);
     font-size: 20px;
   /*   special responsive columns (from una kravets 1 line layouts) */
  /* grid-template-rows: fit-content(40%);  */
@@ -411,12 +421,18 @@ See for more info: https://codepen.io/profstein/pen/mrMLRj
   } 
  
  
-  /*@media (min-width: 768px){
+  @media (min-width: 768px){
     body{
-      grid-template-columns: 1fr 175px;
+      grid-template-columns: 1fr;
       grid-gap: 1rem;
     }
-   
+      .boxes{
+        grid-template-columns: 1fr 1fr;
+        grid-gap: 1rem;
+      }
+}
+    
+
   /* end (min-width: 768px) */
   
   /* flexbox styling */
@@ -458,7 +474,7 @@ See for more info: https://codepen.io/profstein/pen/mrMLRj
   .intro{
     padding: 30px;
     background-color: rgba(11, 4, 30, 0.352);
-    /*margin: 1rem;*/
+    /*margin-top: 3rem;*/
   }
  
   .p2{
@@ -479,7 +495,7 @@ See for more info: https://codepen.io/profstein/pen/mrMLRj
   
   @media screen and (min-width: 1200px){
     .features{
-      grid-template-columns: repeat(1fr, 1fr);
+      grid-template-columns: repeat(3, 1fr);
           }
           .illustrations{
             grid-template-columns: repeat(1fr, 1fr);
@@ -501,22 +517,21 @@ margin: 0 1rem 1rem 0;
 
 }
 
-/*.box{
+.box{
 clear: both;
 overflow: auto;
-} */
+} 
 
 /* GRID LAYOUT */
 .logos{
 display: grid;
-position: absolute;
+/*position: absolute;*/ 
 text-align:center;
-top: 5%;
+/*top: 15%;*/
 /*left: 50%;
 transform: translate(-50%, -50%);*/
 font-size: 20px;
 grid-template-columns: 1fr;
-/*   special responsive columns (from una kravets 1 line layouts) */
 grid-template-rows: fit-content(40%);
 grid-gap: 1rem;
 }
@@ -525,7 +540,7 @@ grid-gap: 1rem;
   /*align-items: center;
   align-self: center;
   align-content: center;*/
-  position: absolute;
+  /*position: absolute;*/
   width:100%;
   /*display: grid;*/
   text-align:center;
@@ -539,9 +554,9 @@ grid-gap: 1rem;
 
 
 
-/*@media (min-width: 768px){
-body{
-  grid-template-columns: 1fr 175px;
+@media (min-width: 768px){
+.logos{
+  grid-template-columns: 1fr;
   grid-gap: 1rem;
 }
 /* end (min-width: 768px) */
@@ -551,13 +566,11 @@ body{
 display: flex;
 flex-direction: column;
 justify-content: space-between;
-padding: 70px;
+/*padding: 70px;
 align-self: center;
 /*   justify-content: center;
 align-items: center; */
 }
-
-
 
 /* =====================================================
  GENERAL STYLING
@@ -580,7 +593,7 @@ font-size:1.5rem;
 
 
 .logobox{
-padding: 25px;
+padding: 50px;
 background-color: rgba(11, 4, 30, 0.352);
 /*margin: 1rem;*/
 }
