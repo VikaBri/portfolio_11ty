@@ -687,13 +687,28 @@ margin: 0 1rem 1rem 0;
 .photo{
     overflow: auto; 
 }
+@media screen and (min-width: 360px){
+    .photos{
+      grid-template-columns: 1fr;
+     } 
+     .centered{
+        font-size: 10px;
+    }
+
+
 @media screen and (min-width: 600px){
 .photos{
   grid-template-columns: 1fr;
+ } 
+ .centered{
+    font-size: 15px;
 }
-}
+
 @media screen and (min-width: 1200px){
 .photos{
   grid-template-columns: repeat(2, 1fr);
+}
+.centered{
+font-size: 20px;
 }
 }    
