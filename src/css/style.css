@@ -309,7 +309,7 @@ See for more info: https://codepen.io/profstein/pen/mrMLRj
 
 /* Centered text */
 .centered {
-    position: absolute;
+    position: absolute; 
     text-align:center;
     top: 50%;
     left: 50%;
@@ -694,7 +694,13 @@ margin: 0 1rem 1rem 0;
      .centered{
         font-size: 10px;
     }
-
+    .pagename{
+      font-size: 10px;
+    }
+    .animate-charcter{
+      font-size: 25px;
+    }
+  }
 
 @media screen and (min-width: 600px){
 .photos{
@@ -703,6 +709,12 @@ margin: 0 1rem 1rem 0;
  .centered{
     font-size: 15px;
 }
+.pagename{
+  font-size: 15px;
+}
+.animate-charcter{
+  font-size: 30px;
+}
 
 @media screen and (min-width: 1200px){
 .photos{
@@ -710,5 +722,12 @@ margin: 0 1rem 1rem 0;
 }
 .centered{
 font-size: 20px;
+}
+.pagename{
+  font-size: 20px;
+}
+.animate-charcter{
+  font-size: 35px;
+}
 }
 }
