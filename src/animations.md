@@ -34,7 +34,7 @@ tags: navItem
  <section class="box box3">
         <div class="intro">
 <h3>“LIPSTIC”</h3>
-<img src="/images/LogoGIF.gif">
+<img src="/images/LogoGIF.gif" alt="lipstik GIF">
             <h4>Adobe After Effects</h4>
             <h4>April 2021</h4>
 <p1>Animated words project - wherein the letters follow the arc of an actual "smile". Zooming and shading effects were used as well.</p1>
